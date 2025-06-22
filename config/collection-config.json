@@ -1,0 +1,58 @@
+{
+  "targets": [
+    {
+      "area": "渋谷区",
+      "categories": ["レストラン", "カフェ"],
+      "radius": 2000,
+      "limit": 100
+    },
+    {
+      "area": "新宿区",
+      "categories": ["美容室", "エステサロン"],
+      "radius": 2000,
+      "limit": 100
+    },
+    {
+      "area": "港区",
+      "categories": ["クリニック", "歯科医院"],
+      "radius": 3000,
+      "limit": 50
+    }
+  ],
+  "analysis": {
+    "performanceThreshold": 50,
+    "mobileThreshold": 70,
+    "seoThreshold": 60,
+    "conversionThreshold": 50,
+    "contentThreshold": 40
+  },
+  "scoring": {
+    "weights": {
+      "performance": 0.25,
+      "mobile": 0.20,
+      "seo": 0.20,
+      "conversion": 0.20,
+      "content": 0.15
+    },
+    "priorityRules": {
+      "high": {
+        "maxScore": 40,
+        "minMonthlyLoss": 100000
+      },
+      "medium": {
+        "maxScore": 60,
+        "minMonthlyLoss": 50000
+      }
+    }
+  },
+  "reporting": {
+    "includeScreenshots": true,
+    "maxHighPriorityDetails": 10,
+    "generateSummaryCSV": true
+  },
+  "filters": {
+    "excludeChains": true,
+    "minRating": 3.5,
+    "requireWebsite": true
+  }
+}

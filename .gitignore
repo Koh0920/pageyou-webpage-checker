@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+
+# Output files
+output/
+!output/.gitkeep
+
+# Input files (except examples)
+input/*.csv
+!input/urls.csv.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Playwright
+test-results/
+playwright-report/
+browsers/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp

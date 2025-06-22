@@ -1,0 +1,45 @@
+{
+  "name": "pageyou-prospect-analyzer",
+  "version": "1.0.0",
+  "description": "PageYou 見込み顧客判別システム - 営業チーム向け",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "analyze": "node dist/index.js",
+    "test": "echo \"Test not implemented yet\"",
+    "lint": "eslint 'src/**/*.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "pageyou",
+    "prospect",
+    "analyzer",
+    "seo",
+    "performance"
+  ],
+  "author": "PageYou Team",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "csv-parse": "^5.5.3",
+    "csv-stringify": "^6.4.5",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "marked": "^11.1.1",
+    "winston": "^3.11.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/yargs": "^17.0.32",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
